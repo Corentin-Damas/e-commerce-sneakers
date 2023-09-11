@@ -1,0 +1,68 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Orange: hsl(26, 100%, 55%)
+- Pale orange: hsl(25, 100%, 94%)
+
+### Neutral
+
+- Very dark blue: hsl(220, 13%, 13%)
+- Dark grayish blue: hsl(219, 9%, 45%)
+- Grayish blue: hsl(220, 14%, 75%)
+- Light grayish blue: hsl(223, 64%, 98%)
+- White: hsl(0, 0%, 100%)
+- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+:root {
+  --cl-pr-orange: hsl(26, 100%, 55%);
+  --cl-pr-pale-orange: hsl(25, 100%, 94%);
+
+  --cl-na-dark-blue: hsl(220, 13%, 13%);
+  --cl-na-dark-gray-blue: hsl(219, 9%, 45%);
+  --cl-na-gray-blue: hsl(220, 14%, 75%);
+  --cl-na-light-gray-blue: hsl(223, 64%, 98%);
+  --cl-na-white: hsl(0, 0%, 100%);
+
+  --cl-na-black-opacity75: hsla(0, 0%, 0%, 75%);
+  --ff-main: "Kumbh Sans", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--ff-main);
+}
+
+img,
+svg,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  box-sizing: border-box;
+}
