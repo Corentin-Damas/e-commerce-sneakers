@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | E-commerce product page</title>
-  <link rel="stylesheet" href="../src/style.css">
-
-</head>
-<body>
-
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="../src/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="website__links">
+        <!-- icone -->
+        <a href="">Collections</a>
+        <a href="">Men</a>
+        <a href="">Women</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </div>
+      <div class="cart_&_profile">
+        <!-- cart resume -->
+        <!-- Profile -->
+      </div>
+    </nav>
+    <main>
+      <div class="container-gallery"></div>
+      <div class="container-presentation">
+        <div class="product__description">
+          <h3>Sneaker Company</h3>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+        </div>
+        <div class="product__price">
+          <h2 class="price">$125.00</h2>
+          <h3 class="promotion">50%</h3>
+          <h4 class="old-price">$250.00</h4>
+        </div>
+        <div class="product__add-cart">
+          <!-- this part can be piloted by React  -->
+          <div class="how__many">
+            <button class="btn__cart button__remove">-</button>
+            <p class="">0</p>
+            <button class="btn__cart button__add">+</button>
+          </div>
+          <div class="add_cart">
+            <button class="cta_btn_addToCart">add to cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
