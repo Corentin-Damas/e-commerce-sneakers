@@ -56,10 +56,9 @@ html {
   font-family: var(--ff-main);
 }
 
-body{
+body {
   height: 100vh;
 }
-
 
 img,
 svg,
@@ -106,7 +105,6 @@ p {
   color: var(--cl-na-dark-gray-blue);
 }
 
-
 /* ======   NAV Bar  ======  */
 
 nav {
@@ -140,36 +138,59 @@ a:focus {
   width: 5rem;
 }
 
-
 /* ======   MAIN Block  ======  */
 
-main{
+main {
   height: 90%;
 }
 
-.main__container{
+.main__container {
   height: 100%;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
 }
 
-.grid__gallery{
-
+.grid__gallery {
 }
 
 .gallery-main-img {
   aspect-ratio: 1/1;
   width: 44.5rem;
   border-radius: 10rem;
+  margin-bottom: 3.2rem;
 }
 
 .gallery-main-img img {
   border-radius: 4rem;
 }
 
+.gallery-miniatures {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
 
+.gallery-thumbnail {
+  aspect-ratio: 1/1;
+  width: 8.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.gallery-thumbnail-selected {
+  aspect-ratio: 1/1;
+  width: 8.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: solid 2px var(--cl-pr-orange);
+  position: relative;
+  opacity: 0.5;
+}
 
 .how__many {
   height: 5.6rem;
@@ -221,4 +242,3 @@ main{
   width: 1.6rem;
   display: block;
 }
-
