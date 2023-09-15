@@ -150,9 +150,7 @@ main {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
-}
-
-.grid__gallery {
+  position: relative;
 }
 
 .gallery-main-img {
@@ -164,6 +162,7 @@ main {
 
 .gallery-main-img img {
   border-radius: 4rem;
+  
 }
 
 .gallery-miniatures {
@@ -171,25 +170,20 @@ main {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  position: relative;
 }
 
 .gallery-thumbnail {
-  aspect-ratio: 1/1;
   width: 8.8rem;
   border-radius: 2rem;
   cursor: pointer;
-  position: relative;
 }
 
 .gallery-thumbnail-selected {
-  aspect-ratio: 1/1;
   width: 8.8rem;
   border-radius: 2rem;
   cursor: pointer;
-  border: solid 2px var(--cl-pr-orange);
-  position: relative;
   opacity: 0.5;
+  border: 2px solid var(--cl-pr-orange);
 }
 
 .how__many {
@@ -232,7 +226,9 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2.6rem;
+  position: relative;
 }
+
 .cart-logo {
   object-fit: cover;
   background-image: url(images/icon-cart.svg);
