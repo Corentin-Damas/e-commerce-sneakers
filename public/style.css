@@ -1,33 +1,7 @@
 /* 
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Orange: hsl(26, 100%, 55%)
-- Pale orange: hsl(25, 100%, 94%)
-
-### Neutral
-
-- Very dark blue: hsl(220, 13%, 13%)
-- Dark grayish blue: hsl(219, 9%, 45%)
-- Grayish blue: hsl(220, 14%, 75%)
-- Light grayish blue: hsl(223, 64%, 98%)
-- White: hsl(0, 0%, 100%)
-- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 16px
-
-### Font
-
 - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700 */
+- Weights: 400, 700 
+*/
 
 :root {
   --cl-pr-orange: hsl(26, 100%, 55%);
@@ -41,6 +15,8 @@
 
   --cl-na-black-opacity75: hsla(0, 0%, 0%, 75%);
   --ff-main: "Kumbh Sans", sans-serif;
+
+  --main-margin: 16rem;
 }
 
 *,
@@ -69,7 +45,10 @@ picture {
 
 body {
   box-sizing: border-box;
+  overflow-y: hidden;
 }
+
+/* ======   Typography  ======  */
 
 h1 {
   font-size: 4.4rem;
@@ -105,12 +84,24 @@ p {
   color: var(--cl-na-dark-gray-blue);
 }
 
+/* ======   Utilities  ======  */
+
+.u-S-margin-bot {
+  margin-bottom: 2.7rem;
+}
+.u-M-margin-bot {
+  margin-bottom: 3.2rem;
+}
+
 /* ======   NAV Bar  ======  */
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  margin-inline: var(--main-margin);
+  margin-top: 2vh;
 }
 
 a,
@@ -138,10 +129,18 @@ a:focus {
   width: 5rem;
 }
 
+hr {
+  margin-top: 3rem;
+  flex-basis: 100%;
+  border-color: solid var(--cl-na-dark-gray-blue);
+  opacity: 0.3;
+}
+
 /* ======   MAIN Block  ======  */
 
 main {
   height: 90%;
+  margin-inline: var(--main-margin);
 }
 
 .main__container {
@@ -153,6 +152,8 @@ main {
   position: relative;
 }
 
+/* =   Gallery  =  */
+
 .gallery-main-img {
   aspect-ratio: 1/1;
   width: 44.5rem;
@@ -162,7 +163,6 @@ main {
 
 .gallery-main-img img {
   border-radius: 4rem;
-  
 }
 
 .gallery-miniatures {
@@ -184,6 +184,32 @@ main {
   cursor: pointer;
   opacity: 0.5;
   border: 2px solid var(--cl-pr-orange);
+}
+
+.gallery-thumbnail:hover {
+  opacity: 0.5;
+}
+
+/* =   Info  =  */
+
+.product__price {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.old-price {
+  flex-basis: 100%;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.promotion {
+  background-color: var(--cl-pr-pale-orange);
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  margin-left: 0.6rem;
 }
 
 .how__many {
@@ -208,6 +234,11 @@ main {
   width: 4rem;
 }
 
+.btn-number {
+  font-weight: 700;
+  color: var(--cl-na-dark-blue);
+}
+
 .product__add-cart {
   display: flex;
   gap: 2rem;
@@ -227,6 +258,11 @@ main {
   align-items: center;
   gap: 2.6rem;
   position: relative;
+}
+
+.cta_btn_addToCart:hover {
+  background-color: var(--cl-pr-orange);
+  opacity: 0.5;
 }
 
 .cart-logo {
