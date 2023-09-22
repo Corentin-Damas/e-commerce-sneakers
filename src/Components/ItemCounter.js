@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ItemCounter({ itemsInCart }) {
+function ItemCounter({ cartItems, setCartItems }) {
   const [itemCount, setItemCount] = useState(0);
 
   function handleAdd() {
@@ -16,8 +16,7 @@ function ItemCounter({ itemsInCart }) {
   }
 
   function handleAddToCart() {
-    itemsInCart = itemCount;
-
+    setCartItems(cartItems + itemCount);
   }
 
   return (

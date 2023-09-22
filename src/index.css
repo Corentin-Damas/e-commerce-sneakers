@@ -154,11 +154,7 @@
     align-items: center;
     flex-direction: column;
   }
-  
-  .cart :not(hr) > * {
-    padding: 2rem;
-  }
-  
+    
   .shoppingcart-widget {
     width: 36rem;
     height: 25rem;
@@ -168,10 +164,24 @@
     top: 120%;
     z-index: 10;
   }
+
+  .cart h5 {
+    padding: 2rem;
+  }
+  .cart .cart-resume-container{
+    padding-inline: 2rem;
+  }
+
   .cart-empty {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: calc(100% - 8rem);
+  }
+
+  .img-resume {
+    width: 10rem;
+    height: 10rem;
   }
   
   .avatar {
@@ -330,3 +340,16 @@
     display: block;
   }
   
+
+  /* === Utility BTN ===  */
+
+.btn-delete {
+  background-color: transparent;
+  /* border: none; */
+  margin: 0;
+  padding: 0;
+
+}
+.btn-delete span {
+  font-size: 2rem;
+}

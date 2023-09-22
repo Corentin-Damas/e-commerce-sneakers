@@ -1,4 +1,6 @@
-function Nav() {
+import Cart from "./Cart";
+
+function Nav({ cartItems }) {
   return (
     <nav>
       <div className="website__links">
@@ -23,7 +25,9 @@ function Nav() {
               fill-rule="nonzero"
             />
           </svg>
-          <div className="shoppingcart-widget" id="shoppingcart"></div>
+          <div className="shoppingcart-widget" id="shoppingcart">
+            <Cart cartItems={cartItems} />
+          </div>
         </div>
         <img className="avatar" src="images/image-avatar.png" alt="" />
       </div>
