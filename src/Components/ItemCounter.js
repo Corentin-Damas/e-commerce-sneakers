@@ -20,6 +20,7 @@ function ItemCounter() {
 
   function handleAddToCart() {
     setCartItems(cartItems + itemCount);
+    setItemCount(0);
   }
 
   return (

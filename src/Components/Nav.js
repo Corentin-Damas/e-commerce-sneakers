@@ -1,6 +1,9 @@
 import Cart from "./Cart";
+import { useState } from "react";
 
 function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav>
       <div className="website__links">
@@ -25,8 +28,8 @@ function Nav() {
               fill-rule="nonzero"
             />
           </svg>
-          <div className="shoppingcart-widget" id="shoppingcart">
-            <Cart/>
+          <div>
+            <Cart isOpen={isOpen} />
           </div>
         </div>
         <img className="avatar" src="images/image-avatar.png" alt="" />
