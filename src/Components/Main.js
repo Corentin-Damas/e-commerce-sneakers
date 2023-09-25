@@ -1,7 +1,7 @@
 import GalleryGeneral from "./Gallery";
 import ItemCounter from "./ItemCounter";
 
-function Main({cartItems, setCartItems}) {
+function Main() {
   return (
     <main>
       <section className="main__container">
@@ -27,7 +27,7 @@ function Main({cartItems, setCartItems}) {
           </div>
           <div className="product__add-cart">
             <div className="u-inline" id="itemCounter">
-              <ItemCounter cartItems={cartItems} setCartItems={setCartItems} />
+              <ItemCounter />
             </div>
           </div>
         </div>

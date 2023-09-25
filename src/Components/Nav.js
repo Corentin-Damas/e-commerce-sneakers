@@ -1,6 +1,6 @@
 import Cart from "./Cart";
 
-function Nav({ cartItems }) {
+function Nav() {
   return (
     <nav>
       <div className="website__links">
@@ -26,7 +26,7 @@ function Nav({ cartItems }) {
             />
           </svg>
           <div className="shoppingcart-widget" id="shoppingcart">
-            <Cart cartItems={cartItems} />
+            <Cart/>
           </div>
         </div>
         <img className="avatar" src="images/image-avatar.png" alt="" />

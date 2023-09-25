@@ -1,4 +1,7 @@
-export default function Cart({ cartItems }) {
+import { useCart } from "./CartContext";
+
+export default function Cart() {
+  const { cartItems } = useCart();
   return (
     <>
       <h5>Cart</h5>
@@ -21,7 +24,7 @@ export default function Cart({ cartItems }) {
             alt={`miniarture 1`}
           />
           <h4>
-            Fall Limited Edition Sneakers <br/> $125.00 x {cartItems} $
+            Fall Limited Edition Sneakers <br /> $125.00 x {cartItems} $
             {cartItems * 125}
           </h4>
           <button className="btn-delete">

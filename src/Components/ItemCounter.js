@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useCart } from "./CartContext";
 
-function ItemCounter({ cartItems, setCartItems }) {
+function ItemCounter() {
+  const { cartItems, setCartItems } = useCart();
+
   const [itemCount, setItemCount] = useState(0);
 
   function handleAdd() {
