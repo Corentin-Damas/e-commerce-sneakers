@@ -136,8 +136,19 @@ a:focus {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--cl-na-dark-blue);
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--cl-pr-orange);
+  text-underline-offset: 4.5rem;
+}
+
 .website__links {
-  display: flex;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   gap: 3.6rem;
 }
 
@@ -166,6 +177,7 @@ a:focus {
   background-color: #ffffff;
   box-shadow: 0 1rem 2rem black;
   position: absolute;
+  left:-18rem;
   top: 120%;
   z-index: 10;
 }
@@ -194,6 +206,21 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cart-notification{
+  background-color: var(--cl-pr-orange);
+  width: 2rem;
+  height: 2rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 1rem;
 }
 
 .resume-img {
