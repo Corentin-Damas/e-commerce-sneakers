@@ -237,6 +237,10 @@ a:hover {
   height: 5rem;
   width: 5rem;
 }
+.avatar:hover{
+  border: solid 2px var(--cl-pr-orange);
+  border-radius: 50%;
+}
 
 hr {
   flex-basis: 100%;
