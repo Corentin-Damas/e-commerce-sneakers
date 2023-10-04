@@ -10,12 +10,12 @@ function Nav() {
   return (
     <nav>
       <div className="website__links">
-        <img src="images/logo.svg" alt="" />
-        <a href="">Collections</a>
-        <a href="">Men</a>
-        <a href="">Women</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <img className="logo" src="images/logo.svg" alt="" />
+        <a className="link" href="">Collections</a>
+        <a className="link" href="">Men</a>
+        <a className="link" href="">Women</a>
+        <a className="link" href="">About</a>
+        <a className="link" href="">Contact</a>
       </div>
       <div className="cart_and_profile">
         <div className="cart">

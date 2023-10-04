@@ -126,10 +126,24 @@ nav {
   margin-inline: var(--main-margin);
   margin-top: 2vh;
 }
+.website__links {
+  display: grid;
+  grid-template-columns: 15rem repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 40vw;
+  gap: 2rem;
+}
+
+.logo {
+  justify-self: left;
+}
 
 a,
 a:visited,
 a:focus {
+  padding-top: 0.25rem;
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--cl-na-dark-gray-blue);
@@ -143,13 +157,6 @@ a:hover {
   text-decoration-thickness: 4px;
   text-decoration-color: var(--cl-pr-orange);
   text-underline-offset: 4.5rem;
-}
-
-.website__links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3.6rem;
 }
 
 .cart_and_profile {
@@ -271,12 +278,41 @@ main {
 }
 
 /* =   Gallery  =  */
+.onFocus__gallery {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  
+  background-color: hsla(219, 11%, 25%, 0.767);
+  backdrop-filter: blur(2px);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  
+  display: grid;
+  grid-template-rows: 70vh 30vh;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.onFocus__gallery .gallery-miniatures{
+  justify-content: center;
+  gap: 2rem;
+  align-self: first baseline;
+}
+.onFocus__gallery .gallery-main-img{
+  align-self: last baseline;
+}
+
 
 .gallery-main-img {
   aspect-ratio: 1/1;
   width: 44.5rem;
   border-radius: 10rem;
   margin-bottom: 3.2rem;
+  cursor: pointer;
 }
 
 .gallery-main-img img {
@@ -307,6 +343,9 @@ main {
 .gallery-thumbnail:hover {
   opacity: 0.5;
 }
+
+
+
 
 /* =   Info  =  */
 
@@ -424,24 +463,4 @@ main {
 .cartClosed {
   display: none;
   height: 0;
-}
-
-.pop-up {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% -50%);
-  background-color: hsla(220, 14%, 75%);
-  border-radius: 10px;
-  box-shadow: 0rem 2rem 4rem hsl(220, 13%, 13%);
-}
-.pop-up-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: grey;
-  backdrop-filter: blur(10px);
-  z-index: 1000;
 }

@@ -1,12 +1,14 @@
+import { useState } from "react";
 import GalleryGeneral from "./Gallery";
 import ItemCounter from "./ItemCounter";
 
 function Main() {
+
   return (
     <main>
       <section className="main__container">
         <div className="grid__gallery">
-          <GalleryGeneral />
+          {<GalleryGeneral/>}
         </div>
         <div className="container-presentation">
           <div className="product__description">
