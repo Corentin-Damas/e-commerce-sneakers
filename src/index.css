@@ -182,10 +182,11 @@ a:hover {
   width: 36rem;
   height: 25rem;
   background-color: #ffffff;
-  box-shadow: 0 1rem 2rem black;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.411);
   position: absolute;
   left: -18rem;
   top: 120%;
+  border-radius: 1rem;
   z-index: 10;
 }
 
@@ -282,14 +283,14 @@ main {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform:translate(-50%, -50%);
-  
+  transform: translate(-50%, -50%);
+
   background-color: hsla(219, 11%, 25%, 0.767);
   backdrop-filter: blur(2px);
   width: 100vw;
   height: 100vh;
   z-index: 1000;
-  
+
   display: grid;
   grid-template-rows: 70vh 30vh;
   grid-template-columns: 1fr;
@@ -297,15 +298,14 @@ main {
   justify-items: center;
 }
 
-.onFocus__gallery .gallery-miniatures{
+.onFocus__gallery .gallery-miniatures {
   justify-content: center;
   gap: 2rem;
   align-self: first baseline;
 }
-.onFocus__gallery .gallery-main-img{
+.onFocus__gallery .gallery-main-img {
   align-self: last baseline;
 }
-
 
 .gallery-main-img {
   aspect-ratio: 1/1;
@@ -315,7 +315,12 @@ main {
   cursor: pointer;
 }
 
-.gallery-main-img img {
+.gallery-main-img {
+  aspect-ratio: 1/1;
+  width: 44.5rem;
+  border-radius: 10rem;
+  margin-bottom: 3.2rem;
+  cursor: pointer;
   border-radius: 4rem;
 }
 
@@ -343,9 +348,6 @@ main {
 .gallery-thumbnail:hover {
   opacity: 0.5;
 }
-
-
-
 
 /* =   Info  =  */
 
@@ -431,6 +433,60 @@ main {
   height: 1.6rem;
   width: 1.6rem;
   display: block;
+}
+
+/* === Pop up option ===  */
+
+.onFocusContainer {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.onFocus-btn {
+  background-color: #ffffff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  color: var(--cl-na-dark-blue);
+  border: none;
+}
+
+.onFocus-close {
+  background: none;
+  border: none;
+  background-color: #ffffff94;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -3rem;
+  right: 0%;
+}
+.svg-fill {
+  fill: var(--cl-na-dark-blue);
+}
+.onFocus-close:hover .svg-fill {
+  fill: var(--cl-pr-orange);
+}
+
+.btn-prev {
+  transform: translateX(50%);
+}
+.btn-next {
+  transform: translateX(-50%);
 }
 
 /* === Utility BTN ===  */
