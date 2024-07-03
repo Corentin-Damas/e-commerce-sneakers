@@ -24,7 +24,7 @@ function ItemCounter() {
   }
 
   return (
-    <>
+    <div className="product__add-cart">
       <div className="addRemoveItems">
         <Button onClick={handleRemove}>-</Button>
         <p className="btn-number">{itemCount}</p>
@@ -35,7 +35,7 @@ function ItemCounter() {
           <span className="cart-logo">&nbsp;</span> Add to cart
         </button>
       </div>
-    </>
+    </div>
   );
 }
 

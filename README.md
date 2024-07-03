@@ -1,7 +1,5 @@
 # Frontend Mentor - E-commerce product page solution
 
-State of the project: Desktop design is read. Phone and tablet version needed
-
 This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6).
 
 ![](./design/desktop-preview.jpg)
@@ -28,17 +26,12 @@ Users should be able to:
 - Add items to the cart
 - View the cart and remove items from it
 
-I'm gonna use also the React javascript Library for practice  
-
 ### Screenshot
 
-![Work in progress](./screenshot.jpg)
+![laptop](./public/resultScreenShot/laptop.jpg)
+![tablet](./public/resultScreenShot/tablet.jpg)
+![phone](./public/resultScreenShot/phone.jpg)
 
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ### Built with
 
